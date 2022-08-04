@@ -1,9 +1,12 @@
+uuid: 7bc50df5-6737-4ad3-9a2a-d53e2231ab49
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: lRLXRg_3JAow_hfLnOi35d1OxgKJj4FDEoXxrs5Z0I4
 id: node.field_tombstone_reason
 field_name: field_tombstone_reason
 entity_type: node

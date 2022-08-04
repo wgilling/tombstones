@@ -1,0 +1,7 @@
+tombstones_paused: 0
+tombstones_use_hooks: 1
+tombstones_ctypes:
+  islandora_object: islandora_object
+  article: 0
+  home_page: 0
+  page: 0

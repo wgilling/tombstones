@@ -1,7 +1,9 @@
+uuid: 2f0d5b6b-9e20-426d-beeb-d98fe001cf81
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.tombstone.field_display_title
     - field.field.node.tombstone.field_tombstone_citation
     - field.field.node.tombstone.field_tombstone_links
     - field.field.node.tombstone.field_tombstone_path
@@ -11,6 +13,8 @@ dependencies:
     - link
     - path
     - text
+_core:
+  default_config_hash: dog_ytojq1SI3aJ7Va5yg-bC9ZS9e1mVPe6N6F65DkE
 id: node.tombstone.default
 targetEntityType: node
 bundle: tombstone
@@ -54,6 +58,13 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
     weight: 30
@@ -104,4 +115,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_display_title: true

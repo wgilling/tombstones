@@ -1,7 +1,9 @@
+uuid: 6e141fcd-0311-415b-b02c-ee09acb620e7
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.tombstone.field_display_title
     - field.field.node.tombstone.field_tombstone_citation
     - field.field.node.tombstone.field_tombstone_links
     - field.field.node.tombstone.field_tombstone_path
@@ -11,11 +13,33 @@ dependencies:
     - link
     - text
     - user
+_core:
+  default_config_hash: zQr3lH4F5j4-jYGqPtxeLYCI2xb4iGOsVVVhqyS5of4
 id: node.tombstone.default
 targetEntityType: node
 bundle: tombstone
 mode: default
 content:
+  display_media_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_entity_view_2:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_thumbnail:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_tombstone_citation:
     weight: 105
     label: above
@@ -55,5 +79,53 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  openseadragon_media_evas_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  openseadragon_media_evas_entity_view_2:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  openseadragon_media_evas_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  pdfjs_media_evas_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  pdfjs_media_evas_entity_view_2:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  pdfjs_media_evas_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  video_media_evas_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  video_media_evas_entity_view_2:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  video_media_evas_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
+  addtoany: true
+  field_display_title: true
+  langcode: true
   search_api_excerpt: true

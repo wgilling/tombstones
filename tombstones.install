@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * Implements hook_uninstall().
+ */
+function tombstones_uninstall() {
+  $configs = [
+    'core.base_field_override.node.tombstone.promote',
+    'core.entity_form_display.node.tombstone.default',
+    'core.entity_view_display.node.tombstone.default',
+    'core.entity_view_display.node.tombstone.teaser',
+    'field.field.node.tombstone.field_tombstone_citation',
+    'field.field.node.tombstone.field_tombstone_links',
+    'field.field.node.tombstone.field_tombstone_path',
+    'field.field.node.tombstone.field_tombstone_reason',
+    'field.storage.node.field_tombstone_citation',
+    'field.storage.node.field_tombstone_links',
+    'field.storage.node.field_tombstone_path',
+    'field.storage.node.field_tombstone_reason',
+    'node.type.tombstone',
+  ];
+  foreach ($configs as $config_name) {
+    $query = \Drupal::database()->delete('config');
+    $query->condition('name', $config_name);
+    $query->execute();
+  }
+  /*
+  Drupal::configFactory()->getEditable('core.base_field_override.node.tombstone.promote')->delete();
+  Drupal::configFactory()->getEditable('core.entity_form_display.node.tombstone.default')->delete();
+  Drupal::configFactory()->getEditable('core.entity_view_display.node.tombstone.default')->delete();
+  Drupal::configFactory()->getEditable('core.entity_view_display.node.tombstone.teaser')->delete();
+  Drupal::configFactory()->getEditable('field.field.node.tombstone.field_tombstone_citation')->delete();
+  Drupal::configFactory()->getEditable('field.field.node.tombstone.field_tombstone_links')->delete();
+  Drupal::configFactory()->getEditable('field.field.node.tombstone.field_tombstone_path')->delete();
+  Drupal::configFactory()->getEditable('field.field.node.tombstone.field_tombstone_reason')->delete();
+  Drupal::configFactory()->getEditable('field.storage.node.field_tombstone_citation')->delete();
+  Drupal::configFactory()->getEditable('field.storage.node.field_tombstone_links')->delete();
+  Drupal::configFactory()->getEditable('field.storage.node.field_tombstone_path')->delete();
+  Drupal::configFactory()->getEditable('field.storage.node.field_tombstone_reason')->delete();
+  Drupal::configFactory()->getEditable('node.type.tombstone')->delete();
+  */
+}

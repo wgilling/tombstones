@@ -1,9 +1,12 @@
+uuid: e3782db7-bd02-4cba-9848-9ec1e6102951
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: 4NhpLdbwrzw5z-zaHQs3h3ok0Q5xAYaD4XDTzjQ2VYQ
 id: node.field_tombstone_citation
 field_name: field_tombstone_citation
 entity_type: node

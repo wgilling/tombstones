@@ -1,3 +1,4 @@
+uuid: 7c33da6b-427a-416d-b57e-6d99aa8a8b4a
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.tombstone
   module:
     - text
+_core:
+  default_config_hash: tBBIH4RQpOf7CLsH-yiT1_wUSLNSoj1lRzNl1bPBMsw
 id: node.tombstone.field_tombstone_reason
 field_name: field_tombstone_reason
 entity_type: node

@@ -1,8 +1,11 @@
+uuid: 0ca6c5dd-8c25-45cb-b21c-d76ff48505d4
 langcode: en
 status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: ONahW_-_UBjiUGgmSK13WzYZafY0EHSLmph-brU-_Ks
 id: node.field_tombstone_path
 field_name: field_tombstone_path
 entity_type: node

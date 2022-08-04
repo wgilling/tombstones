@@ -1,9 +1,12 @@
+uuid: 09c49e5a-659b-49ca-849b-9b2e496c0e19
 langcode: en
 status: true
 dependencies:
   module:
     - link
     - node
+_core:
+  default_config_hash: D22UDb7rtBFX4AJ0zAhlk3yMq_-eZod7Ze30CgARG_g
 id: node.field_tombstone_links
 field_name: field_tombstone_links
 entity_type: node

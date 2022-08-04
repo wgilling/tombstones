@@ -58,7 +58,14 @@ class TombstonesService {
       'field_tombstone_path' => $tombstone_metadata['path'],
     ]);
     $tombstone->save();
-    \Drupal::service('path.alias_storage')->save("/node/" . $tombstone->id(), $tombstone_metadata['path'], "en");
+    
+    $path_alias = \Drupal::entityTypeManager()->getStorage('path_alias')->create([
+      'path' => "/node/" . $tombstone->id(),
+      'alias' => $tombstone_metadata['path'],
+      'langcode' => "en",
+    ]);
+    $path_alias->save();
+    \Drupal::entityTypeManager()->getStorage('path_alias')->save($path_alias);
   }
 
 }

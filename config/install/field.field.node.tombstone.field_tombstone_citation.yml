@@ -1,3 +1,4 @@
+uuid: 7a7e6234-60de-4097-9e62-eef2dc8a313b
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.tombstone
   module:
     - text
+_core:
+  default_config_hash: ZJq-JJTFqFiDfurhiPQKghLWgpKwjjARVN05yUffGfs
 id: node.tombstone.field_tombstone_citation
 field_name: field_tombstone_citation
 entity_type: node

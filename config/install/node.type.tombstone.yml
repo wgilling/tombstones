@@ -1,3 +1,4 @@
+uuid: 92a49ff5-75ea-422a-bb1e-ffca10a97e30
 langcode: en
 status: true
 dependencies:
@@ -7,6 +8,8 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
+_core:
+  default_config_hash: WvhE7jcQj6i7VHLm5TGuEgaKI4gS0iMI4qRJGqV8g3U
 name: Tombstone
 type: tombstone
 description: 'Tombstones replace other nodes to show that something used to exist at that URL endpoint, but doesn''t any longer.'

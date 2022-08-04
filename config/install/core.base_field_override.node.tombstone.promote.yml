@@ -1,8 +1,11 @@
+uuid: 0f9d8d1e-0884-48d7-86bc-0be0b234e95a
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.tombstone
+_core:
+  default_config_hash: S5xZacZtMk7ojKCE4Ug8x0Zb_Z_BQ6N3Eq65xzqEaHU
 id: node.tombstone.promote
 field_name: promote
 entity_type: node
